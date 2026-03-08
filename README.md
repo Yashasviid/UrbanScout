@@ -1,15 +1,21 @@
-# 🦘 What's On Sydney — Live Events Finder
+# UrbanScout— Live Events Finder
 
-A beautiful, minimal Next.js website that automatically scrapes and displays events happening in Sydney, Australia.
+A Next.js website that automatically scrapes and displays events happening in Sydney, Australia.
+
+[![Live Demo](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://urban-scout-e0d84r6f2-yashasviids-projects.vercel.app)
+
 
 ## Features
 
 - 🔍 **Auto-scraping** from Eventbrite, What's On Sydney (City of Sydney), and Ticketek
 - 🎨 **Stunning dark UI** with animated hero, smooth card interactions, and responsive grid
-- 🏷️ **Category filtering** — Music, Festival, Market, Sport, Arts, Food, Film, Comedy & more
+- 🏷️ **Category filtering** : Music, Festival, Market, Sport, Arts, Food, Film, Comedy & more
 - 🔎 **Live search** with debounce across title, description, and location
 - 🔄 **Auto-refresh** every 30 minutes with manual refresh button
 - 📱 **Fully responsive** on mobile and desktop
+- Real-time Ticketmaster events (~2s load)
+- Login/Signup (Google OAuth ready)  
+- Dashboard for leads/events
 
 ## Tech Stack
 
