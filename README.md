@@ -2,7 +2,7 @@
 
 A Next.js website that automatically scrapes and displays events happening in Sydney, Australia.
 
-[![Live Demo](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://urban-scout-e0d84r6f2-yashasviids-projects.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://urban-scout.vercel.app/)
 
 
 ## Features
@@ -24,6 +24,43 @@ A Next.js website that automatically scrapes and displays events happening in Sy
 - **Cheerio** for HTML scraping
 - **DM Sans + Fraunces** fonts
 - Pure CSS animations (no extra animation libraries needed)
+
+## 🖼️ UI Preview
+
+### 🏠 Homepage
+<p align="center">
+  <img src="screenshots/homepage.png" width="90%">
+</p>
+
+---
+
+### 🔍 Event Search & Results
+<p align="center">
+  <img src="screenshots/search.png" width="90%">
+</p>
+
+---
+
+### 🎟️ Events Listing
+<p align="center">
+  <img src="screenshots/events.png" width="90%">
+</p>
+
+---
+
+### 🔐 Authentication
+
+<p align="center">
+  <img src="screenshots/login.png" width="45%">
+  <img src="screenshots/signup.png" width="45%">
+</p>
+
+---
+
+### 📬 Contact Page
+<p align="center">
+  <img src="screenshots/contactus.png" width="90%">
+</p>
 
 ## Getting Started
 
@@ -58,10 +95,6 @@ For more reliable and richer data, add API keys to `.env.local`:
 2. Add `TICKETMASTER_API_KEY=your_key` to `.env.local`
 3. Uncomment the Ticketmaster integration in `src/lib/scraper.js`
 
-### Eventbrite Private Token
-1. Go to https://www.eventbrite.com/platform/api
-2. Add `EVENTBRITE_TOKEN=your_token` to `.env.local`
-3. Uncomment the Eventbrite API integration
 
 ## Project Structure
 
