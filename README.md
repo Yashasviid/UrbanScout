@@ -1,4 +1,4 @@
-# UrbanScout— Live Events Finder
+# UrbanScout : Live Events Finder
 
 A Next.js website that automatically scrapes and displays events happening in Sydney, Australia.
 
