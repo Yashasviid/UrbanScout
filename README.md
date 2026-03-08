@@ -7,7 +7,7 @@ A Next.js website that automatically scrapes and displays events happening in Sy
 
 ## Features
 
-- 🔍 **Auto-scraping** from Eventbrite, What's On Sydney (City of Sydney), and Ticketek
+- 🔍 **Auto-scraping** from Ticketek
 - 🎨 **Stunning dark UI** with animated hero, smooth card interactions, and responsive grid
 - 🏷️ **Category filtering** : Music, Festival, Market, Sport, Arts, Food, Film, Comedy & more
 - 🔎 **Live search** with debounce across title, description, and location
@@ -95,6 +95,56 @@ For more reliable and richer data, add API keys to `.env.local`:
 2. Add `TICKETMASTER_API_KEY=your_key` to `.env.local`
 3. Uncomment the Ticketmaster integration in `src/lib/scraper.js`
 
+## 🔐 Authentication (Google OAuth)
+
+UrbanScout includes secure user authentication using **Google OAuth** powered by NextAuth.
+Users can quickly sign up or log in with their Google account to access personalized features like dashboards and saved events.
+
+### Setup Google OAuth
+
+1. Go to **Google Cloud Console** → https://console.cloud.google.com
+2. Create a new project.
+3. Navigate to **APIs & Services → Credentials**.
+4. Click **Create Credentials → OAuth Client ID**.
+5. Choose **Web Application**.
+
+Add these **Authorized Redirect URIs**:
+
+For local development:
+
+```
+http://localhost:3000/api/auth/callback/google
+```
+
+For production (Vercel):
+
+```
+https://urban-scout.vercel.app/api/auth/callback/google
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory and add:
+
+```bash
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+NEXTAUTH_SECRET=your_random_secret
+NEXTAUTH_URL=http://localhost:3000
+```
+
+### Install Authentication Dependencies
+
+```
+npm install next-auth
+```
+
+### Authentication Features
+
+* 🔐 Secure login with Google
+* 👤 User session management
+* 📊 Access to user dashboard
+* ⚡ Seamless authentication flow
 
 ## Project Structure
 
